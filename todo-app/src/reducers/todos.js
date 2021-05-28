@@ -3,6 +3,8 @@ const initialState = {
 };
 
 const todos = (state = initialState, action)=>{
+    console.log("state-"+state.data)
+    console.log("action-"+action.type)
     switch(action.type){
         case 'ADD_TODO':
             return {

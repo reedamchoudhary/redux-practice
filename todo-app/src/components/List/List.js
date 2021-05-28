@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import {deleteTodo} from "../../actions" 
 
 const List = (props) => {
+    console.log("props inside list="+props.todos)
     return(
         <ul>
             {props.todos.map((todo, index) => (
